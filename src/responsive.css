@@ -17,7 +17,10 @@
 	padding-top: 55px;
 	min-width: 200px;
   }
-  .nav-links li,.dropdown-content a{
+  .dropdown{
+  	width: 100%;
+  }
+  .nav-links a,.dropdown-content a, .dropbtn{
   	border: 1px solid rgba(200,150,100,.7);
   	width: 100%;
   }

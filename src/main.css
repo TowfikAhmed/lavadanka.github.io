@@ -80,8 +80,7 @@ button:hover, .ad2:hover{
 	position: relative;
 	transition: all 1s ease;
 }
-.nav-links li{
-	list-style: none;
+.nav-links a, .dropbtn{
 	display: flex;
 	align-items: center;
 	margin: 0px;
@@ -92,7 +91,7 @@ button:hover, .ad2:hover{
 .last{
 	border: none !important;
 }
-.nav-links li:hover{
+.nav-links a:hover, .dropbtn:hover{
 	background-color: rgba(200,150,100,.5);
 }
 
@@ -166,13 +165,13 @@ button:hover, .ad2:hover{
 	font-size: 1rem;
 	justify-content: space-between;
 }
-.sidenav li{
-	list-style: none;
+.sidenav a{
 	padding: 10px 15px;
+	display: block;
 	box-shadow: 0px 0px 1px rgba(0,0,0,.5);
 	cursor: pointer;
 }
-.sidenav li:hover{
+.sidenav a:hover{
 	background-color: rgba(0,0,0,.2);
 	color: white;
 }
