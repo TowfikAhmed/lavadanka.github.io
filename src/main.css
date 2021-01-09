@@ -10,6 +10,7 @@ body{
 	text-shadow: 2px 2px 2px gray;
 	max-width: 1920px;
 	overflow-x: hidden;
+	margin: auto;
 }
 a{
 	color: currentColor;
@@ -36,6 +37,9 @@ button:hover, .ad2:hover{
 	color: white;
 	font-weight: bold;
 }
+.mobile{
+	display: none !important;
+}
 .cta2{}
 .bg1{
 	background-color: rgba(255,255,255,.5);
@@ -57,6 +61,7 @@ button:hover, .ad2:hover{
 	top: 0;
 	z-index: 10;
 	width: 100%;
+	max-width: 1920px;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.2);
 }
 .navbar{
@@ -73,8 +78,9 @@ button:hover, .ad2:hover{
 	justify-content: space-between;
 }
 .logo{
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: bold;
+	transition: all .5s ease-in;
 }
 .nav-links{
 	position: relative;
@@ -175,17 +181,18 @@ button:hover, .ad2:hover{
 	background-color: rgba(0,0,0,.2);
 	color: white;
 }
-.ad1, .ad2{
+.category{
+	border: 1px solid rgba(0,0,0,.2);
+	margin: 5px;
+	padding: 1px;
+	font-size: 1rem;
+}
+.ad{
 	cursor: pointer;
 	padding: 0px;
 	margin: auto;
 	display: block;
 	width: 90%;
-
-}
-.ad1{
-}
-.ad2{
 }
 footer{
 	width: 100%;
