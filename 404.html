@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome!</title>
+	<meta name="description" content="Free Web tutorials">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/src/main.css">
+	<link rel="stylesheet" type="text/css" href="/src/responsive.css">
+	<script src="https://kit.fontawesome.com/0df25f886a.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.login{
+			width: 500px;
+		}
+		.form{
+			padding: 8px;
+			display: block;
+			width: 100%;
+			margin: 10px 0px 20px 0px;
+			border: 1px solid rgba(0,0,0,.1);
+		}
+		.label{
+
+		}
+		@media screen and (max-width: 500px) {
+		.login{
+			width: auto;
+		}
+		}
+	</style>
+</head>
+<body>
+	<section class="nav">
+		<div class="navbar shadow flex"  id="navbar">
+			<div class="logo" id="logo">লবডঙ্কা</div>
+			<ul class="nav-links flex" id="nav-links">
+				<a class="nav-link" href="/index.html">হোমপেজ</a>
+				<a href="/others/join.html">যোগ দিন</a>
+				<a href="/others/contact.html">যোগাযোগ</a>
+				<div class="dropdown">
+				  <div class="dropbtn last">বিভাগসমুহ`<i class="fas fa-angle-down"></i></div>
+				  <div class="dropdown-content">
+				    <a href="/pages/python.html">পাইথন প্রোগ্রামিং</a>
+				    <a href="/pages/website.html">ওয়েবসাইট & ডেভঃ</a>
+				    <a href="/pages/cpa.html">সিপিএ/এফিলিয়েট</a>
+				    <a href="/pages/forex.html">ফরেক্স/ক্রিপ্টো</a>
+				    <a href="/pages/stock.html">শেয়ারবাজার</a>
+				    <a href="/pages/money.html">মেকিং মানি</a>
+				    <a href="/pages/others.html">অন্যান্য বিষয়াবলী</a>
+				    <a href="/pages/others.html">মার্কেটপ্লেস & টুলস</a>
+				  </div>
+				</div>
+				<button class="closeNav" onclick="closeNav()">x</button>
+			</ul>
+			<div class="burger" onclick="openNav()">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</div>
+		<div class="bottom-nav flex">
+			<p class="broadcomb">
+				<a href="/index.html">হোমপেজ /</a>
+				<a href="/index.html">যোগাযোগ /</a>
+			</p>
+			<p id="counter">অনলাইনঃ ৯৫, মেম্বারঃ ২১, ভিজিটরঃ ৭৪</p>
+		</div>
+	</section>
+	<section class="main flex" id="main">
+				<p class="card login">
+					<br><br><br><br>
+					<h1 style="font-size: 2.5rem;text-align: center;">404</h1>
+					<h1 style="text-align: center;">পেজটি পাওয়া যাইনি!</h1>
+					<br><br><br><br>
+				</p>
+
+		
+	</section>
+	<footer>
+		<div class="footer">
+			<p>লবডঙ্কা</p>
+			<small>All rights are reserved by Lavadanka.com.</small>
+			<small>By Lavadanka.com 2021.</small>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="/src/app.js"></script>
+</body>
+</html>
