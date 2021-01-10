@@ -1,10 +1,10 @@
 function openNav() {
-	var nav = document.getElementById('nav-links');
-	nav.style.right='0px';
+  var nav = document.getElementById('nav-links');
+  nav.style.right='0px';
 }
 function closeNav() {
-	var nav = document.getElementById('nav-links');
-	nav.style.right='-500px';
+  var nav = document.getElementById('nav-links');
+  nav.style.right='-500px';
 }
 
 
@@ -22,11 +22,11 @@ function scrollFunction() {
 }
 
 
-var seller = document.getElementsByClassName("seller");
+var seller = document.getElementsByClassName("verified");
 for (var i = seller.length - 1; i >= 0; i--) {
-	seller[i].innerHTML  = '<i class="fas fa-certificate"></i> Verfied Seller';
-	seller[i].style.padding = '3px';
-	seller[i].style.backgroundColor = 'rgba(210,230,210,.7)';
+  seller[i].innerHTML  = '<i class="fas fa-certificate"></i> ভেরিফাইড মেম্বার';
+  seller[i].style.padding = '3px';
+  seller[i].style.backgroundColor = 'rgba(210,230,210,.7)';
 }
 
 
