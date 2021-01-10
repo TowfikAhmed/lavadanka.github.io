@@ -39,9 +39,9 @@ function getRand(min, max) {
 var date = new Date();
 var nmb = date.getHours();
 var member;
-if (nmb>10) { member = nmb-getRand(3,6)} else { member = getRand(1,4)+nmb};
+if (nmb>10) { member = nmb-getRand(5,8)} else { member = getRand(1,3)+nmb};
 var visitor;
-if (nmb>10) { visitor = nmb*9-getRand(11,23)} else { visitor = getRand(11,24)+nmb*9};
+if (nmb>10) { visitor = nmb*3-getRand(11,23)} else { visitor = getRand(11,24)+nmb*2};
 var online = visitor+member
 document.getElementById("counter").innerHTML = 'অনলাইনঃ '+online+', মেম্বারঃ '+member+', ভিজিটরঃ '+visitor;
 // document.getElementById("counter").innerHTML = 'অনলাইনঃ '+online+', মেম্বারঃ '+member+', ভিজিটরঃ '+visitor;
@@ -50,7 +50,7 @@ document.getElementById("counter").innerHTML = 'অনলাইনঃ '+online+'
 var ads = document.getElementsByClassName("adgroup");
 for (var i = ads.length - 1; i >= 0; i--) {
   var img = getRand(1, 2)
-  ads[i].innerHTML  = '<a href="/ads/ad'+img+'.html"><img src="/ads/'+img+'d.png" class="ad card desktop"></a><a href="/ads/'+img+'.html"><img src="/ads/'+img+'m.png" class="ad card mobile"></a>';
+  ads[i].innerHTML  = '<a href="/ads/ad'+img+'.html"><img src="/ads/'+img+'d.gif" class="ad card desktop"></a><a href="/ads/'+img+'.html"><img src="/ads/'+img+'m.gif" class="ad card mobile"></a>';
   // ads[i].innerHTML  = '<a href="ads/ad'+img+'.html"><img src="ads/'+img+'d.png" class="ad card desktop"></a><a href="ads/'+img+'.html"><img src="ads/'+img+'m.png" class="ad card mobile"></a>';
 }
 
