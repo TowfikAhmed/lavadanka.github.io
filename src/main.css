@@ -16,6 +16,9 @@ a{
 	color: currentColor;
 	text-decoration: none;
 }
+.link{
+	color: rgb(239 154 0);
+}
 .post, .card{
 	margin: 20px;
 	padding: 20px;

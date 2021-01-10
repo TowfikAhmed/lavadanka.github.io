@@ -2,21 +2,32 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>ওয়েবসাইট & ডেভঃ!</title>
+	<title>Welcome!</title>
 	<meta name="description" content="Free Web tutorials">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/src/main.css">
 	<link rel="stylesheet" type="text/css" href="/src/responsive.css">
 	<script src="https://kit.fontawesome.com/0df25f886a.js" crossorigin="anonymous"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EFXHZ7MWK9"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	<style type="text/css">
+		.login{
+			width: 500px;
+		}
+		.form{
+			padding: 8px;
+			display: block;
+			width: 100%;
+			margin: 10px 0px 20px 0px;
+			border: 1px solid rgba(0,0,0,.1);
+		}
+		.label{
 
-	  gtag('config', 'G-EFXHZ7MWK9');
-	</script>
+		}
+		@media screen and (max-width: 500px) {
+		.login{
+			width: 300px;
+		}
+		}
+	</style>
 </head>
 <body>
 	<section class="nav">
@@ -49,47 +60,33 @@
 		</div>
 		<div class="bottom-nav flex">
 			<p class="broadcomb">
-				<a href="/index.html">হোমপেজ / ওয়েবসাইট & ডেভঃ</a>
+				<a href="/index.html">হোমপেজ /</a>
+				<a href="/index.html">লগ-ইন /</a>
 			</p>
 			<p id="counter">অনলাইনঃ ৯৫, মেম্বারঃ ২১, ভিজিটরঃ ৭৪</p>
 		</div>
 	</section>
 	<section class="main flex" id="main">
-		<div class="content">
-
-			<div class="post bg1">
-				<div class="title">
-					<p>আমার সোনার বাংলা আমি তোমায় সোনার বাংলা আমি তোমায় ভালোবাসি</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<p>
-					আমার সোনার বাংলা আমি তোমায় ভালোবাসি, 
-					না সোনার বাংলা আমি তোমায় ভালোবাসি...
+				<p class="card login">
+					<span>ইমেইল:</span>
+					<input type="email" name="" class="form">
+					<span>পাসওয়ার্ড:</span>
+					<input type="password" name="" class="form">
+					<small style="color: hotpink;display: none;" id="warn">পাসওয়ার্ড ভুল হয়েছে।</small><br>
+					<button class="cta"  onclick="myFunction()">লগ-ইন</button><br><br>
+					<small>অ্যাকাউন্ট নেই? <a href="/others/join.html" class="link">অ্যাকাউন্ট খুলুন।</a></small>
 				</p>
-				<a href="e" class="cta">বিস্তারিত দেখুন</a><span class="category"> পাইথন প্রোগ্রামিং</span><br>
-				<small>Created on: 04 Jan 2021 Views: 21,000+</small>
-			</div>
 
-			<div class="adgroup"></div>
-			
+				<script>
+				function myFunction() {
+				  setTimeout(function(){ 
+				  	document.getElementById("warn").style.display = "block";
+				  	 }, 2300);
 
-		</div>
-		<div class="sidebar">
-			<div class="sidenav card bg1">
-				<a href="/pages/python.html">পাইথন প্রোগ্রামিং</a>
-				<a href="/pages/website.html">ওয়েবসাইট & ডেভঃ</a>
-				<a href="/pages/cpa.html">সিপিএ/এফিলিয়েট</a>
-				<a href="/pages/forex.html">ফরেক্স/ক্রিপ্টো</a>
-				<a href="/pages/stock.html">শেয়ারবাজার</a>
-				<a href="/pages/money.html">মেকিং মানি</a>
-				<a href="/pages/others.html">অন্যান্য বিষয়াবলী</a>
-				<a href="/pages/others.html">মার্কেটপ্লেস & টুলস</a>
-			</div>
-			<img src="/img/sidebar-banner.png" class="ad card">
-			<!-- <img src="img/sidebar-banner.png" class="ad card"> -->
+				}
+				</script>
+
+		
 		</div>
 	</section>
 	<footer>

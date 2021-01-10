@@ -2,12 +2,32 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Welcome!</title>
+	<title>Sign Up!</title>
 	<meta name="description" content="Free Web tutorials">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/src/main.css">
 	<link rel="stylesheet" type="text/css" href="/src/responsive.css">
 	<script src="https://kit.fontawesome.com/0df25f886a.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.login{
+			width: 500px;
+		}
+		.form{
+			padding: 8px;
+			display: block;
+			width: 100%;
+			margin: 10px 0px 20px 0px;
+			border: 1px solid rgba(0,0,0,.1);
+		}
+		.label{
+
+		}
+		@media screen and (max-width: 500px) {
+		.login{
+			width: auto;
+		}
+		}
+	</style>
 </head>
 <body>
 	<section class="nav">
@@ -41,20 +61,25 @@
 		<div class="bottom-nav flex">
 			<p class="broadcomb">
 				<a href="/index.html">হোমপেজ /</a>
-				<a href="/index.html">AD1 /</a>
+				<a href="/index.html">সাইন আপ /</a>
 			</p>
 			<p id="counter">অনলাইনঃ ৯৫, মেম্বারঃ ২১, ভিজিটরঃ ৭৪</p>
 		</div>
 	</section>
 	<section class="main flex" id="main">
-				<p class="card">
-					আমার সোনার বাংলা আমি তোমায় ভালোবাসি, 
-					না সোনার বাংলা আমি তোমায় ভালোবাসি। 
-					 সোনার বাংলা আমি তোমায় ভালোবাসি
-					সে সোনার বাংলা আমি তোমায়, ভালোবাসি
-					তবে সোনার বাংলা আমি তোমায় ভালোবাসি। 
-					আমার সোনার বাংলা আমি তোমায় ভালোবাসি
-					তাই সোনার বাংলা আমি তোমায় ভালোবাসি...
+				<p class="card login">
+					<i style="color: hotpink;" id="warn">আন্তরিকভাবে দুঃখিত। টেকনিক্যাল কারনে নতুন মেম্বার নেয়া আপাতত বন্ধ আছে।</i>
+					<br><br>
+					<span>পুরো নাম:</span>
+					<input type="email" name="" class="form">
+					<span>ইমেইল:</span>
+					<input type="email" name="" class="form">
+					<span>পাসওয়ার্ড:</span>
+					<input type="password" name="" class="form">
+					<span>পাসওয়ার্ড:</span>
+					<input type="password" name="" class="form">
+					<button type="button" disabled class="cta" style="cursor: not-allowed;">অ্যাকাউন্ট খুলুন</button><br><br>
+					<small>অ্যাকাউন্ট আছে? <a href="/others/login.html" class="link">লগ-ইন করুন।</a></small>
 				</p>
 
 		
