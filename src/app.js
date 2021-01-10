@@ -49,7 +49,7 @@ document.getElementById("counter").innerHTML = 'অনলাইনঃ '+online+'
 
 var ads = document.getElementsByClassName("adgroup");
 for (var i = ads.length - 1; i >= 0; i--) {
-  var img = getRand(1, 2)
+  var img = getRand(1, 3)
   ads[i].innerHTML  = '<a href="/ads/ad'+img+'.html"><img src="/ads/'+img+'d.gif" class="ad card desktop"></a><a href="/ads/'+img+'.html"><img src="/ads/'+img+'m.gif" class="ad card mobile"></a>';
   // ads[i].innerHTML  = '<a href="ads/ad'+img+'.html"><img src="ads/'+img+'d.png" class="ad card desktop"></a><a href="ads/'+img+'.html"><img src="ads/'+img+'m.png" class="ad card mobile"></a>';
 }
