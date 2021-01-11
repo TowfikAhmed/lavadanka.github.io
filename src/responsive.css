@@ -1,31 +1,31 @@
 @media screen and (max-width: 700px) {
-	body{
-		font-size: 1.2rem;
-	}
+  body{
+    font-size: 1.2rem;
+  }
   .nav-links{
-  	position: absolute;
-  	flex-direction: column;
-  	justify-content: flex-start;
-  	top: 0px;
-  	min-height: 100vh;
-  	right: -500px;
-	background-color: rgb(239 154 0);
-	padding: 5px;
-	padding-top: 55px;
-	min-width: 200px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 0px;
+    min-height: 100vh;
+    right: -500px;
+  background-color: rgb(239 154 0);
+  padding: 5px;
+  padding-top: 55px;
+  min-width: 200px;
   }
   .dropdown{
-  	width: 100%;
+    width: 100%;
   }
   .nav-links a,.dropdown-content a, .dropbtn{
-  	border: 1px solid rgba(200,150,100,.7);
-  	width: 100%;
+    border: 1px solid rgba(200,150,100,.7);
+    width: 100%;
   }
   .last{
-  	border: 1px solid rgba(200,150,100,.7) !important;
+    border: 1px solid rgba(200,150,100,.7) !important;
   }
   .burger,.closeNav{
-  	display: block;
+    display: block;
   }
   .mobile{
     display: block !important;
@@ -34,31 +34,34 @@
     display: none !important;
   }
   .main{
-  	flex-direction: column;
+    flex-direction: column;
   }
   .post{
-  	margin: 10px;
+    margin: 10px;
     margin-top: 20px;
-  	padding: 10px;
+    padding: 10px;
   }
   .content{
-  	margin: auto;
-  	width: 100%;
+    margin: auto;
+    width: 100%;
   }
   .sidebar{
-  	width: 100%;
-  	margin: 10px;
-  	right: 10px;
-  	position: relative;
+    width: 100%;
+    margin: 10px;
+    right: 10px;
+    position: relative;
   }
   .sidenav{
   }
   .broadcomb{
-  	display: none;
+    display: none;
   }
   .dropdown-content{
-  	left: -150px;
-  	right: 150px;
-  	top: -150px;
+    left: -150px;
+    right: 150px;
+    top: -150px;
+  }
+  #fb{
+    margin: 0px;
   }
 }
