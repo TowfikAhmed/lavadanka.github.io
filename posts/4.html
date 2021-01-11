@@ -17,8 +17,14 @@
 
 	  gtag('config', 'G-EFXHZ7MWK9');
 	</script>
+
+
+	<meta property="fb:app_id" content="872237613594417" />
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="XWsrgeHn"></script>
+
 	<section class="nav">
 		<div class="navbar shadow flex"  id="navbar">
 			<div class="logo" id="logo">লবডঙ্কা</div>
@@ -104,6 +110,13 @@
 				<span class="category"> শেয়ারবাজার</span><br>
 				<small>Created on: 28 Jan 2020 Views: 1,000+</small>
 			</div>
+
+			<div id="fb" class="card"></div>
+			<script>
+			  var elmnt = document.getElementById("post");
+			  var txt = '<div class="fb-comments" data-href="' + window.location.href + '" data-width="'+elmnt.offsetWidth+'" data-numposts="8"></div>';
+			  document.getElementById("fb").innerHTML = txt;
+			</script>
 
 			<div class="adgroup"></div>
 			
