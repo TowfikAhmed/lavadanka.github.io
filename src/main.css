@@ -205,6 +205,9 @@ button:hover, .ad2:hover,.cta:hover{
 	display: block;
 	width: 90%;
 }
+#fb{
+	padding: 0px;
+}
 footer{
 	width: 100%;
 	position: relative;
