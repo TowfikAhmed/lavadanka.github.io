@@ -182,6 +182,9 @@ button:hover, .ad2:hover,.cta:hover{
 	margin-top: 30px;
 	margin-bottom: 10px;
 }
+.post-body img{
+	max-width: 100%;
+}
 .sidenav a{
 	padding: 10px 15px;
 	display: block;
