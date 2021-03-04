@@ -1,216 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>লবডঙ্কা তে আপনাকে স্বাগতম!</title>
-	<meta name="description" content="Free Web tutorials">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="/src/main.css">
-	<link rel="stylesheet" type="text/css" href="/src/responsive.css">
-	<script src="https://kit.fontawesome.com/0df25f886a.js" crossorigin="anonymous"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EFXHZ7MWK9"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-EFXHZ7MWK9');
-	</script>
+	<title>Nav Bar Design</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-	<section class="nav">
-		<div class="navbar shadow flex"  id="navbar">
-			<div class="logo" id="logo">লবডঙ্কা</div>
-			<ul class="nav-links flex" id="nav-links">
-				<a class="nav-link" href="/others/login.html">লগ-ইন</a>
-				<a href="/others/join.html">যোগ দিন</a>
-				<a href="/others/contact.html">যোগাযোগ</a>
-				<div class="dropdown">
-				  <div class="dropbtn last">বিভাগসমুহ`<i class="fas fa-angle-down"></i></div>
-				  <div class="dropdown-content">
-				    <a href="/pages/python.html">পাইথন প্রোগ্রামিং</a>
-				    <a href="/pages/website.html">ওয়েবসাইট & ডেভঃ</a>
-				    <a href="/pages/cpa.html">সিপিএ/এফিলিয়েট</a>
-				    <a href="/pages/forex.html">ফরেক্স/ক্রিপ্টো</a>
-				    <a href="/pages/stock.html">শেয়ারবাজার</a>
-				    <a href="/pages/money.html">মেকিং মানি</a>
-				    <a href="/pages/others.html">অন্যান্য বিষয়াবলী</a>
-				    <a href="/pages/others.html">মার্কেটপ্লেস & টুলস</a>
-				  </div>
-				</div>
-				<button class="closeNav" onclick="closeNav()">x</button>
-			</ul>
-			<div class="burger" onclick="openNav()">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
-			</div>
+	<nav class="nav-bar">
+		<ul class="navs left-navs">
+			<li><a class="home-link" href="#home">HOME</a></li>
+			<li><a class="about-link" href="#about">ABOUT</a></li>
+			<li><a class="contact-link" href="#contact">CONTACT</a></li> 
+		</ul>
+		<div class="logo-cont"><img src="files/logo.png" class="logo"></div>
+		<ul class="navs right-navs">
+			<li><a class="experties-link" href="#experties">EXPERTISE</a></li>
+			<li><a class="works-link" href="#works">WORKS</a></li>
+			<li><a class="quote-link" href="#quote">QUOTE</a></li> 
+		</ul>
+
+		<ul class="navs nav-links">
+			<li class="link">About</li>
+			<li class="link">Contact</li>
+			<li class="link">Log In</li>
+			<li class="link">Sign Up</li>
+		</ul>
+		<div class="burger" onclick="activateNav()">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
 		</div>
-		<div class="bottom-nav flex">
-			<p class="broadcomb">
-				<a href="/index.html">হোমপেজ / প্রথম-পাতা /</a>
-			</p>
-			<p id="counter">অনলাইনঃ ৯৫, মেম্বারঃ ২১, ভিজিটরঃ ৭৪</p>
-		</div>
+	</nav>
+
+	<section class="presentation" id="home">
+		<h1>—<span id="quote">কমপ্লিট ওয়েবসাইট</span>—</h1>
+		<h3>from Bangladesh</h3>
+		<button class="cta-quote">REQUEST A QUOTE</button>
+		<h3>Let's make this happen for your business as well. Great web experiences is waiting for you.
+		</h3>
+		<div class="curve-bottom"></div>
+		<div class="presentation-overlay"></div>
 	</section>
-	<section class="main flex" id="main">
-		<div class="content">
-
-		<!-- 	<div class="post bg1">
-				<div class="title">
-					<p>আমারসোনারবাংলা</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<div class="post-body">
-					আমারসোনারবাংলাআমিতোমায়ভালোবাসি...
-				</div>
-				<a href="/posts/1.html" class="cta">বিস্তারিত দেখুন</a><span class="category"> পাইথনপ্রোগ্রামিং</span><br>
-				<small>Created on: 04 Jan 2021 Views: 21,000+</small>
-			</div> -->
-
-			<div class="post bg1">
-				<div class="title">
-					<p>সিপিআই কি?, স্মার্টলিঙ্ক ও কন্টেন্ট লকিং কি?</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<div class="post-body">
-					আসসালামু আলাইকুম, আশা করি সবাই ভাল আছেন। অনেকে নতুন আবার অনেকে কয়েক বছর মার্কেটে আছে তবুও মোবাইল সিপিআই, স্মার্টলিঙ্ক ও কন্টেন্ট লকিং সম্মন্ধে তেমন একটা জানেন না, এই পোস্ট টি তাদের জন্য। নতুন মার্কেটাররা এই পোস্ট দুটি আগে পড়ে নিতে পারেন...
-				</div>
-				<a href="/posts/7.html" class="cta">বিস্তারিত দেখুন</a><span class="category"> সিপিএ/এফিলিয়েট</span><br>
-				<small>Created on: 08 Jan 2021 Views: 2,000+</small>
-			</div>
-
-			<div class="post bg1">
-				<div class="title">
-					<p>সিপিএ মার্কেটিং করে মাসে কত আয় করা যায় ও নতুনদের জন্য আয় করতে কত দিন লাগে?</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<div class="post-body">
-					আসসালামুয়ালাইকুম, আশা করি সবাই ভাল আছেন। অনেক নতুন মার্কেটারদের প্রশ্ন থাকে যে ভাই, সিপিএ করে মাসে কত আসবে বা কত দিন লাগে কাজ শুরু করে টাকা তুলতে ইত্যাদি ইত্যাদি।সিপিএ সাফল্য এই কয়েকটা বিষয়ের উপর নির্ভর করে। ট্রাফিক এর পরিমান, অফারের ধরন, নেটওয়ার্ক, নিশ এবং 
-					মার্কেটিং কৌশল।...
-				</div>
-				<a href="/posts/6.html" class="cta">বিস্তারিত দেখুন</a><span class="category"> সিপিএ/এফিলিয়েট</span><br>
-				<small>Created on: 04 Jan 2021 Views: 1,000+</small>
-			</div>
-
-			<div class="post bg1">
-				<div class="title">
-					<p>ঘরে বসে কাজ করে অনলাইনে টাকা আয় করার সবচেয়ে নির্ভরযোগ্য কয়েকটি পথ।</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<div class="post-body">
-					আপনি হয়ত শুনে থাকবেন মানুষ অনলাইনে বা ইনটারনেট থেকে লক্ষ লক্ষ টাকা ইনকান করছে, তাহলে আপনি ঠিকই শুনেছেন। আবার এটাও শুনেছেন যে ইনটারনেট থেকে আয় করা সম্ভব নয় বা সহজ কাজ নয় অথবা এর পেছনে সময় নষ্ট করে লাভ নেই, এটাও কিছু মানুষের ক্ষেত্রে সঠিক...
-				</div>
-				<a href="/posts/5.html" class="cta">বিস্তারিত দেখুন</a><span class="category"> মেকিং মানি</span><br>
-				<small>Created on: 29 Dec 2020 Views: 3,000+</small>
-			</div>
 
 
-			<div class="adgroup"></div>
-
-
-			<div class="post bg1">
-				<div class="title">
-					<p>শেয়ার মাকেট সম্মন্ধে প্রাথমিক ধারনা ও আপনার যা যা জানা দরকার।</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<div class="post-body">
-					শেয়ার মাকেট একটি ঝুকিপুন বাজার, তাই এই বাজারে বিনিয়োগের আগে আপনাকে ভাল করে জেনে বুঝে শিখে  বিনিয়োগ করতে হবে। অনেকে মনে করে বাংলাদেশের শেয়ারবাজার জুয়াখেলা ছাড়া আর কিছুই নয়! বরং শেয়ার বাজার হল এমন একটি প্লাটফর্ম, যা হয় আপনাকে প্রচুর মুনাফা এনে দিবে, নয়ত মারাত্মক ক্ষতির সম্মুখীন করবে...
-				</div>
-				<a href="/posts/4.html" class="cta">বিস্তারিত দেখুন</a><span class="category"> শেয়ারবাজার</span><br>
-				<small>Created on: 28 Jan 2020 Views: 1,000+</small>
-			</div>
-
-			<div class="post bg1">
-				<div class="title">
-					<p>সিপিএ মার্কেটিং কি এবং কিভাবে সিপিএ মার্কেটিং করতে হয়!</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<div class="post-body">
-					এফিলিয়েট মার্কেটিং-এর একটি গুরুত্বপূর্ণ পার্ট হচ্ছে সিপিএ(Cost Per Action) মার্কেটিং,  এটিও একটি এডভাটাইজিং মডেল। 
-					এফিলিয়েট মার্কেটিং এ যতক্ষন আপনার পোডাক্ট বিক্রি না হবে ততক্ষন আপনি কমিশন পাবেন না কিন্ত সিপিএ সেল রিলেটেড একটা নির্দিষ্ট কাজ(Action) করে দিলেও কমিশন পেয়ে যাবেন, কমপ্লিট সেল না হলেও।...
-				</div>
-				<a href="/posts/3.html" class="cta">বিস্তারিত দেখুন</a><span class="category"> পাইথন প্রোগ্রামিং</span><br>
-				<small>Created on: 26 Dec 2020 Views: 2,000+</small>
-			</div>
-
-			<div class="post bg1">
-				<div class="title">
-					<p>অ্যাফেলিয়েট মার্কেটিং কী?</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<div class="post-body">
-					একদম সহজভাবে বলতে গেলে, অন্যর প্রোডাক্ট সেল করে দিয়ে কমিশন নেয়াকে অ্যাফেলিয়েট মার্কেটিং বলে। এফিলিয়েট মার্কেটিং এর মাধ্যমে একটি প্রতিষ্ঠানের পন্যের মার্কেটিং করে বিক্রয়ের উপর একটি নির্দিষ্ট হারে কমিশন পাওয়া যায়।
-					কোন ধরনের প্রডাক্ট এর মার্কেটিং করবেন?...
-				</div>
-				<a href="/posts/2.html" class="cta">বিস্তারিত দেখুন</a><span class="category"> সিপিএ/এফিলিয়েট</span><br>
-				<small>Created on: 25 Dec 2020 Views: 500+</small>
-			</div>
-
-			<div class="post bg1">
-				<div class="title">
-					<p>পাইথন কি, এর ব্যবহার ও চাহিদা, কেন ও কিভাবে শিখবেন ইত্যাদি।</p>
-					<div class="author flex">
-						<p><i class="fas fa-user"></i> তৌফিক আহমেদ</p>
-						<p class="verified"></p>
-					</div>
-				</div>
-				<div class="post-body">
-					পাইথন একটি জনপ্রিয় হাই লেভেল প্রোগ্রামিং ল্যাঙ্গুয়েজ। এটি 1991 সালে Guido van Rossum তৈরি করেছিলেন । বর্তমানে ডেটার পরিমান ব্যাপক হারে বৃদ্ধি পাওয়ার কারনে পাইথনের চাহিদা আগের থেকে বহুগুণ বেড়ে গেছে। তাছাড়া পাওয়ারফুল ল্যাঙ্গুয়েজ হওয়ায় মেশিন লার্নিং, ডেটা সাইন্স আর ওয়েব আপ্লিকেশন এর জন্য বহুল ব্যাবহার হচ্ছে।...
-				</div>
-				<a href="/posts/1.html" class="cta">বিস্তারিত দেখুন</a><span class="category"> পাইথন প্রোগ্রামিং</span><br>
-				<small>Created on: 03 Dec 2020 Views: 1,000+</small>
-			</div>
-
-			<div class="adgroup"></div>
-			
-
-		</div>
-		<div class="sidebar">
-			<div class="sidenav card bg1">
-				<a href="/pages/python.html">পাইথন প্রোগ্রামিং</a>
-				<a href="/pages/website.html">ওয়েবসাইট & ডেভঃ</a>
-				<a href="/pages/cpa.html">সিপিএ/এফিলিয়েট</a>
-				<a href="/pages/forex.html">ফরেক্স/ক্রিপ্টো</a>
-				<a href="/pages/stock.html">শেয়ারবাজার</a>
-				<a href="/pages/money.html">মেকিং মানি</a>
-				<a href="/pages/others.html">অন্যান্য বিষয়াবলী</a>
-				<a href="/pages/others.html">মার্কেটপ্লেস & টুলস</a>
-			</div>
-			<img src="/img/sidebar-banner.png" class="ad card">
-			<!-- <img src="img/sidebar-banner.png" class="ad card"> -->
-		</div>
+	
+	<section class="section-one">
+		
 	</section>
-	<footer>
-		<div class="footer">
-			<p>লবডঙ্কা</p>
-			<small>All rights are reserved by Lavadanka.com.</small>
-			<small>By Lavadanka.com 2021.</small>
-		</div>
+	<section class="section-two" id="about">
+		<div class="curve-top"></div>
+		About
+		<div class="curve-bottom"></div>
+	</section>
+	<section class="section-three">
+		
+	</section>
+	<section class="section-four">
+		<div class="curve-top"></div>
+		
+		<div class="curve-bottom"></div>
+	</section>
+	<section class="section-five">
+		
+	</section>
+
+
+	<footer class="main-footer">
+		
 	</footer>
 
-	<script type="text/javascript" src="/src/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/TextPlugin.min.js" integrity="sha512-5vj9ij+ioiIGxKUW3a3FwhixlMWYdt13TNj1y6HKqpMeGcXZ7GeP+YhcbAIl1ZUJl1jNiNuaYWzVcHoOB4r7vQ==" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
